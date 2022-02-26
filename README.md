@@ -1,1 +1,1 @@
-# kalkulator1
+kalkulator napisany w nim
