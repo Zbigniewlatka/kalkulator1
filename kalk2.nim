@@ -13,20 +13,16 @@ let b = readline(stdin).parseFloat()
 
 echo "=====================\n"
 echo " Wyniki działań"
-echo o plus(g, b)
-echo minus(g, b)
-echo divd(g, b).round(2)
-echo multip(g, b)
 
 
-#case x
-#of +:
-#  echo "Five!"
-#of -:
-#  echo "Seven!"
-#of /:
-#  echo "Ten!"
-#of *:
-#  echo "Ten!"
-#else:
-#  echo "zły wybór spróbuje jeszcze raz"
+case x
+of +:
+  echo o plus(g, b)
+of -:
+  echo minus(g, b)
+of /:
+  echo divd(g, b).round(2)
+of *:
+  echo multip(g, b)
+else:
+  echo "zły wybór spróbuje jeszcze raz"
