@@ -1,9 +1,10 @@
-import kalk1
+iimport kalk1
 import strutils
 import math
+import parseChar from std/strutils
 
-echo "Podaj działanie : (+),(-),(/), (*) : "
-let x = readline(stdin).parseChar()
+echo "Podaj działanie : (+),(-),(/),(*) : "
+let i = readline(stdin).parseChar()
 
 echo "Podaj liczbę "
 let g = readline(stdin).parseFloat()
@@ -14,8 +15,7 @@ let b = readline(stdin).parseFloat()
 echo "=====================\n"
 echo " Wyniki działań"
 
-
-case x
+case i
 of '+':
   echo  plus(g, b)
 of '-':
